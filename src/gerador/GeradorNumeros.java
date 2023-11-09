@@ -25,17 +25,9 @@ public class GeradorNumeros {
 	}
 
 	public static void gerarNumero(Integer min, Integer max, Integer qtdNumeros) {
-		List<Integer> numeros = new ArrayList<>();
 		for(int i = 0; i < qtdNumeros; i++) {
 			Integer numRandom = (int) ((Math.random()*max)+min);
-
-			if(!numeros.contains(numRandom)) {
-				numeros.add(numRandom);
-				System.out.println(numRandom);
-			}else {
-				i--;
-			}
-
+			System.out.println(numRandom);
 		}
 	}
 
